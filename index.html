@@ -17,12 +17,12 @@
     </style>
 </head>
 <body class="font-Manrope">
-    <header class="container mx-auto">
-        <div class="hero min-h-screen">
-            <div class="hero-content flex-col lg:flex-row-reverse justify-between items-center">
+    <header class="container mx-auto w-full md:w-3/4 lg:w-10/12 xl:w-3/4 p-4">
+        <div class="hero pt-20">
+            <div class="hero-content flex-col lg:flex-row-reverse justify-between items-center gap-y-12 p-0 text-center lg:text-left">
               <div class="">
                 <img src="/images/banner.png" class="max-w-sm" />
-                <div class="flex items-center gap-4 bg-white w-60 p-4 rounded-lg shadow relative -mt-16">
+                <div class="flex items-center gap-4 bg-white w-[60%] p-4 rounded-lg shadow relative -mt-16">
                   <i class="fa-solid fa-star text-4xl text-amber-400"></i>
                   <div>
                     <h3 class="text-3xl font-extrabold">5.00</h3>
@@ -34,15 +34,15 @@
                 <h1 class="text-5xl md:text-7xl font-extrabold">It's good <br>
                   tea time at The <br> Tea House</h1>
                 <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary text-xl normal-case text-white border-0 bg-gradient-to-r from-orange-500 to-red-500">Explore More</button>
+                <button class="btn btn-primary text-xl normal-case text-white border-0 bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Explore More</button>
               </div>
             </div>
           </div>
     </header>
-    <main class="container mx-auto w-3/4">
+    <main class="container mx-auto w-full md:w-3/4 lg:w-10/12 xl:w-3/4 p-4">
       <!-- Feature Section -->
       <section class="text-center my-28">
-        <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <h2 class="text-5xl font-extrabold mb-5 text-center">Our Featured Products</h2>
         <p class="lg:max-w-4xl mx-auto mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Card - 1 -->
@@ -114,9 +114,10 @@
       
       <!-- Client Review -->
       <section>
-        <div class="my-32 p-16 flex flex-col lg:flex-row gap-12 justify-between items-center  rounded-lg bg-gradient-to-r from-[#FF8938] to-[#F00]">
+        <div class="my-32 p-12 md:p-16 flex flex-col lg:flex-row gap-12 justify-between items-center  rounded-lg  bg-gradient-to-r from-[#FF8938] to-[#FF0000] relative">
+          <img src="images/bg_cup.png" class="absolute left-32 bottom-1 object-contain bg-blend-overlay" alt="">
           <div class="lg:w-[45%]">
-            <h2 class="text-5xl font-extrabold text-gray-50">Meet Our Super Clients</h2>
+            <h2 class="text-5xl font-extrabold text-gray-50 leading-tight">Meet Our Super Clients</h2>
             <p class="text-base font-medium text-gray-50 mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             <button class="btn btn-secondary border-0 text-orange-500 font-extrabold bg-white mt-7 hover:bg-[#F00] hover:text-white">Show All</button>
           </div>
@@ -135,7 +136,7 @@
               </div>
             </div>
             <!-- Current Review -->
-            <div class="bg-white p-10 rounded-lg absolute top-40 -ml-20 w-[105%] z-10">
+            <div class="bg-white p-10 rounded-lg absolute top-40 -ml-6 lg:-ml-20 w-full lg:w-[105%] z-10">
               <div class="absolute -top-5 -left-5 bg-white p-1 rounded-full">
               <img src="images/client.png" alt="client">
               </div>
@@ -161,9 +162,121 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer>
 
+      <!-- News & Events -->
+      <section>
+        <h2 class="text-5xl font-extrabold mb-5 text-center">Our Featured Products</h2>
+        <p class="lg:max-w-4xl mx-auto mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        <!-- News card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- News -1 -->
+          <div class="card bg-white shadow-xl">
+            <figure><img src="images/news-1.png" alt="news-1" /></figure>
+            <div class="card-body">
+              <p class="font-medium text-[#777]">Feb 05, 2027</p>
+              <h2 class="card-title text-[#1C1C1C]">
+                Collecting 8 points for discount
+              </h2>
+              <p>There are many variations of passages of Lorem Ipsum available.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-ghost btn-sm font-bold">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <!-- News -2 -->
+          <div class="card bg-white shadow-xl">
+            <figure><img src="images/news-2.png" alt="news-1" /></figure>
+            <div class="card-body">
+              <p class="font-medium text-[#777]">Feb 05, 2027</p>
+              <h2 class="card-title text-[#1C1C1C]">
+                Collecting 8 points for discount
+              </h2>
+              <p>There are many variations of passages of Lorem Ipsum available.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-ghost btn-sm font-bold">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <!-- News -3 -->
+          <div class="card bg-white shadow-xl">
+            <figure><img src="images/news-3.png" alt="news-1" /></figure>
+            <div class="card-body">
+              <p class="font-medium text-[#777]">Feb 05, 2027</p>
+              <h2 class="card-title text-[#1C1C1C]">
+                Collecting 8 points for discount
+              </h2>
+              <p>There are many variations of passages of Lorem Ipsum available.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-ghost btn-sm font-bold">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-base-200 mt-32 pt-32 bg-gradient-to-r from-rose-50 to-rose-100 ">
+      <div class="container mx-auto w-full md:w-3/4 lg:w-10/12 xl:w-3/4 p-4">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-24 space-y-10">
+          <div class="">
+            <img src="images/cup.png" alt="logo">
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-center gap-10 text-xl mr-4">
+            <p>Ready to get strated?</p>
+            <button class="btn btn-primary normal-case text-white text-xl font-bold border-0 bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Get Started</button>
+          </div>
+        </div>
+        <div class="footer grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 text-base justify-between space-y-5">
+          <div class="w-full md:w-1/2">
+            <span class="footer-title text-[#1C1C1C] opacity-100 text-xl normal-case">Services</span> 
+            <a class="link link-hover">Branding</a> 
+            <a class="link link-hover">Design</a> 
+            <a class="link link-hover">Marketing</a> 
+            <a class="link link-hover">Advertisement</a>
+          </div> 
+          <div>
+            <span class="footer-title text-[#1C1C1C] opacity-100 text-xl normal-case">Company</span> 
+            <a class="link link-hover">About us</a> 
+            <a class="link link-hover">Contact</a> 
+            <a class="link link-hover">Jobs</a> 
+            <a class="link link-hover">Press kit</a>
+          </div> 
+          <div>
+            <span class="footer-title text-[#1C1C1C] opacity-100 text-xl normal-case">Legal</span> 
+            <a class="link link-hover">Terms of use</a> 
+            <a class="link link-hover">Privacy policy</a> 
+            <a class="link link-hover">Cookie policy</a>
+          </div> 
+          <div>
+            <span class="footer-title text-[#1C1C1C] opacity-100 text-2xl normal-case">Subscribe to our <br> newsletter</span> 
+            <div class="form-control w-80"> 
+              <div class="relative">
+                <input type="text" placeholder="Your email" class="input w-4/5 p-2 bg-transparent rounded-none text-[#494949] border-0 outline-0 border-b-2 border-[#494949] focus-visible:border-[#FF8938] focus-visible:outline-none"/> 
+                <div class="btn btn-primary p-3.5 rounded-full bg-gradient-to-r from-[#FF8938] to-[#FF0000] border-0">
+                  <img src="images/Arrow_Right.svg" alt="Subscribe">
+                </div>
+              </div>
+            </div>
+            <div class="social flex items-center gap-2 mt-12 cursor-pointer">
+              <div class="facebook p-3 rounded-full hover:bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+                <img src="images/Icon_Facebook.svg" alt="facebook">
+              </div>
+              <div class="twitter p-3 rounded-full hover:bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+                <img src="images/Icon_Twitter.svg" alt="twitter">
+              </div>
+              <div class="instagram p-3 rounded-full hover:bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+                <img src="images/Icon_Instagram.svg" alt="instagram">
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer footer-center p-4 text-base mt-20">
+          <div>
+            <p>Copyright © 2023 - All right reserved by Tea House Ltd.</p>
+          </div>
+        </footer>
+      </div>
     </footer>
 
         <!-- Tailwind custom color -->
